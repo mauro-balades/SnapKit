@@ -1,3 +1,6 @@
+import React from "react";
+import { lightTheme } from "../defined-themes";
 
-const Context = React.createContext(lightTheme);
-export { ContextProvider: Context.Provider, Context };
+const _Context = React.createContext(lightTheme);
+export const ContextProvider = _Context.Provider;
+export const Context = _Context;

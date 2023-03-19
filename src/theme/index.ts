@@ -8,6 +8,7 @@ export interface IButtonTheme {
 
     border: string;
     secondaryBorder: string;
+    borderSize: number;
 };
 
 export interface ITheme {

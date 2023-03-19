@@ -5,15 +5,16 @@ export const lightTheme: ITheme = {
     borderRadius: 5,
 
     buttons: {
-        background: '#000'
-        secondaryBackground: '#fff'
+        background: '#000',
+        secondaryBackground: '#fff',
 
-        color: '#fff'
-        secondaryColor: '#000'
+        color: '#fff',
+        secondaryColor: '#000',
 
-        border: '#000'
-        secondaryBorder: 'rgb(31 41 55)'
-    }
+        border: '#000',
+        secondaryBorder: 'rgb(31 41 55)',
+        borderSize: 2,
+    },
 }
 
 export const darkTheme: ITheme = {
@@ -21,13 +22,14 @@ export const darkTheme: ITheme = {
     borderRadius: 5,
 
     buttons: {
-        background: '#fff'
-        secondaryBackground: '#000'
+        background: '#fff',
+        secondaryBackground: '#000',
 
-        color: '#000'
-        secondaryColor: '#fff'
+        color: '#000',
+        secondaryColor: '#fff',
 
-        border: '#fff'
-        secondaryBorder: 'rgb(31 41 55)'
-    }
+        border: '#fff',
+        secondaryBorder: 'rgb(31 41 55)',
+        borderSize: 2,
+    },
 }
