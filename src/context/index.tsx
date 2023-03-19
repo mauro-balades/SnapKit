@@ -1,5 +1,3 @@
 
-
-
-const Context = React.createContext(defaultValue);
+const Context = React.createContext(lightTheme);
 export { ContextProvider: Context.Provider, Context };

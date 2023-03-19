@@ -1,2 +1,3 @@
 export { * } from "./theme";
-export { ContextProvider, Context } from "./context";
+export { * } from "./context";
+export { * } from "./defined-themes";
