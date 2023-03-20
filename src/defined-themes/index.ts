@@ -2,7 +2,7 @@ import { ITheme } from "../theme"
 
 export const lightTheme: ITheme = {
     variant: 'light',
-    borderRadius: 5,
+    borderRadius: 6,
 
     buttons: {
         background: '#000',
@@ -15,11 +15,16 @@ export const lightTheme: ITheme = {
         secondaryBorder: 'rgb(31 41 55)',
         borderSize: 2,
     },
+
+    colors: {
+        primary: '#000',
+        secondary: '#ccc',
+    },
 }
 
 export const darkTheme: ITheme = {
     variant: 'dark',
-    borderRadius: 5,
+    borderRadius: 6,
 
     buttons: {
         background: '#fff',
@@ -31,5 +36,10 @@ export const darkTheme: ITheme = {
         border: '#fff',
         secondaryBorder: 'rgb(31 41 55)',
         borderSize: 2,
+    },
+
+    colors: {
+        primary: '#000',
+        secondary: '#ccc',
     },
 }

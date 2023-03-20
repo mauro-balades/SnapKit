@@ -11,8 +11,14 @@ export interface IButtonTheme {
     borderSize: number;
 };
 
+export interface IColors {
+    primary: string;
+    secondary: string;
+}
+
 export interface ITheme {
     variant: 'light' | 'dark';
     borderRadius: number;
     buttons: IButtonTheme;
+    colors: IColors;
 };

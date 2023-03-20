@@ -14,21 +14,21 @@ export const StyledButton = styled.button`
     transition: .15s;
 
     ${(props: StyleProps<Props>) => `
-        ${props.p.size === 'small' ? 
+        ${props.p.size === 'small' ?
             `
-            padding: 7px 13px;
-            font-size: .875rem;
+            padding: 5px 10px;
+            font-size: 14px;
             line-height: 1.25rem;
             `
         : props.p.size === 'medium' ? 
             `
-            padding: 10px 16px;
-            font-size: 1rem;
+            padding: 10px 20px;
+            font-size: 20px;
             line-height: 1.25rem;
             `
         : /* large */ `
-            padding: 12px 18px;
-            font-size: 1.30rem;
+            padding: 15px 30px;
+            font-size: 20px;
         `}
     `}
 

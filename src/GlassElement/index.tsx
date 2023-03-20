@@ -1,13 +1,13 @@
 
 import React from "react";
 import { Context } from "../context";
-import { StyledButton } from "./styles";
+import { StyledGlass } from "./styles";
 import {Props, defaultProps} from "./props";
 import { ITheme } from "../theme";
 
-export * as ButtonProps from "./props";
+export * as GlassElementProps from "./props";
 
-export class Button extends React.Component<Props> {
+export class GlassElement extends React.Component<Props> {
     static contextType = Context;
     static defaultProps = defaultProps;
 
@@ -15,9 +15,9 @@ export class Button extends React.Component<Props> {
         let themeContext = this.context as ITheme;
 
         return (
-            <StyledButton t={themeContext} p={this.props} {...this.props}>
+            <StyledGlass t={themeContext} p={this.props} {...this.props}>
                 {this.props.children}
-            </StyledButton>
+            </StyledGlass>
         )
     }
 }
