@@ -14,6 +14,8 @@ export interface IButtonTheme {
 export interface IColors {
     primary: string;
     secondary: string;
+
+    secondaryBorder: string;
 }
 
 export interface ITheme {

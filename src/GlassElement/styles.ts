@@ -10,6 +10,8 @@ export const StyledGlass = styled.div`
         -webkit-backdrop-filter: blur(${props.p.blurLevel}px);
         box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
         color: ${props.t.colors.primary};
-        padding: 20px;
+
+        width: 100%;
+        height: 100%;
     `}
 `

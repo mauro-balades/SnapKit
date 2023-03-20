@@ -18,7 +18,9 @@ export const lightTheme: ITheme = {
 
     colors: {
         primary: '#000',
-        secondary: '#ccc',
+        secondary: 'rgba(0,0,0,.7)',
+
+        secondaryBorder: '#ccc'
     },
 }
 
@@ -40,6 +42,8 @@ export const darkTheme: ITheme = {
 
     colors: {
         primary: '#000',
-        secondary: '#ccc',
+        secondary: 'rgba(0,0,0,.7)',
+
+        secondaryBorder: '#ccc'
     },
 }

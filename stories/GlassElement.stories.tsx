@@ -11,7 +11,7 @@ function Example(props: GlassElementProps.Props) {
                 background: "linear-gradient(rgba(250,0,0,0.5),transparent)",
                 backgroundColor: "orange" }}>
             </div>
-            <GlassElement style={{ position: 'absolute', top: '0', left: '0', width: "200px", height: '100px' }} {...props}></GlassElement>
+            <GlassElement style={{ position: 'absolute', top: '0', left: '0', width: "200px", height: '100px', padding: '20px' }} {...props}></GlassElement>
         </>
     )
 }

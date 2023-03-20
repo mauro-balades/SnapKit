@@ -44,6 +44,17 @@ export const StyledButton = styled.button`
                 border-color: ${props.t.buttons.background};
                 color: ${props.t.buttons.background};
             }
+        ` : props.p.variant === "ghost" ? `
+            color: ${props.t.colors.secondary};
+            border: 1px solid ${props.t.colors.secondaryBorder};
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            background: rgba(255, 255, 255, 0.15);
+
+            &:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 5px 20px rgba(255, 255, 255, 0.2);
+            }
         ` : /* secondary */ `
             background: ${props.t.buttons.secondaryBackground};
             border-radius: ${props.t.borderRadius}px;
@@ -55,6 +66,20 @@ export const StyledButton = styled.button`
                 background: ${props.t.buttons.background};
                 color: ${props.t.buttons.secondaryBackground};
             }
+        `}
+    `}
+
+    ${(props: StyleProps<Props>) => `
+        ${props.p.shape === 'circle' ?
+            `
+            border-radius: 50%;
+            `
+        : props.p.shape === 'pill' ?
+            `
+            border-radius: 30px;
+            `
+        : /* default */ `
+            border-radius: ${props.t.borderRadius}px;
         `}
     `}
 `
