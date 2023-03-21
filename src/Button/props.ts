@@ -4,10 +4,12 @@ export interface Props extends HTMLAttributes<HTMLButtonElement> {
     size: 'small' | 'medium' | 'large';
     icon?: ReactNode;
     shape: 'circle' | 'pill' | 'default';
+    iconProps: HTMLAttributes<HTMLSpanElement>; 
 }
 
 export const defaultProps: Props = {
     variant: 'primary',
     size: 'medium',
     shape: 'default',
+    iconProps: {}
 }

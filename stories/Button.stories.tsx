@@ -4,7 +4,7 @@ import { Button, ButtonProps } from '../src';
 import { withReactContext } from 'storybook-react-context';
 
 const meta: Meta = {
-  title: 'Button',
+  title: 'Button/Button',
   component: Button,
   argTypes: {
     children: {
