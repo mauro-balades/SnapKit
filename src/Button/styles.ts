@@ -13,22 +13,46 @@ export const StyledButton = styled.button`
     user-select: none;
     transition: .15s;
 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
     ${(props: StyleProps<Props>) => `
         ${props.p.size === 'small' ?
             `
             padding: 5px 10px;
             font-size: 14px;
             line-height: 1.25rem;
+
+            & span.snap-kit--button-icon:first-child {
+                width: 1em;
+                height: 1em;
+                fill: currentcolor;
+            }
             `
         : props.p.size === 'medium' ? 
             `
             padding: 10px 20px;
             font-size: 20px;
             line-height: 1.25rem;
+
+            & span.snap-kit--button-icon:first-child {
+                width: 25px;
+                height: 25px;
+
+                margin-right: 10px;
+            }
             `
         : /* large */ `
             padding: 15px 30px;
             font-size: 20px;
+
+            & span.snap-kit--button-icon:first-child {
+                width: 25px;
+                height: 25px;
+
+                margin-right: 15px;
+            }
         `}
     `}
 
@@ -82,4 +106,16 @@ export const StyledButton = styled.button`
             border-radius: ${props.t.borderRadius}px;
         `}
     `}
+
+    & span.snap-kit--button-icon:first-child {
+        position: relative;
+        display: block;
+    }
+
+    & span.snap-kit--button-icon:first-child > svg {
+        width: 100%;
+        height: 100%;
+
+        display: block;
+    }
 `
