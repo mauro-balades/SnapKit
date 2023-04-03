@@ -11,6 +11,15 @@ export interface IButtonTheme {
     borderSize: number;
 };
 
+export interface ITextInputTheme {
+    background: string;
+    color: string;
+
+    border: string;
+    secondaryBorder: string;
+    borderSize: number;
+};
+
 export interface IColors {
     primary: string;
     secondary: string;
@@ -23,4 +32,5 @@ export interface ITheme {
     borderRadius: number;
     buttons: IButtonTheme;
     colors: IColors;
+    textInput: ITextInputTheme;
 };

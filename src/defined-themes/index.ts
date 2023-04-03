@@ -12,7 +12,16 @@ export const lightTheme: ITheme = {
         secondaryColor: '#000',
 
         border: '#000',
-        secondaryBorder: 'rgb(31 41 55)',
+        secondaryBorder: 'rgb(31, 41, 55)',
+        borderSize: 2,
+    },
+
+    textInput: {
+        background: 'transparent',
+        color: 'rgb(0, 0, 0 / 7)',
+
+        border: '#000',
+        secondaryBorder: 'rgba(31, 41, 55, .7)',
         borderSize: 2,
     },
 
@@ -27,6 +36,15 @@ export const lightTheme: ITheme = {
 export const darkTheme: ITheme = {
     variant: 'dark',
     borderRadius: 6,
+
+    textInput: {
+        background: 'transparent',
+        color: 'rgb(0, 0, 0 / 7)',
+
+        border: '#000',
+        secondaryBorder: 'rgba(31, 41, 55, .7)',
+        borderSize: 2,
+    },
 
     buttons: {
         background: '#fff',

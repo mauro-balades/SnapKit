@@ -1,11 +1,11 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { Button, ButtonProps } from '../src';
+import { TextInput, TextInputProps } from '../src';
 import { withReactContext } from 'storybook-react-context';
 
 const meta: Meta = {
-  title: 'Inputs/Button',
-  component: Button,
+  title: 'Inputs/Text input',
+  component: TextInput,
   argTypes: {
     children: {
       control: {
@@ -20,10 +20,10 @@ const meta: Meta = {
 
 export default meta;
 
-const Template: Story<ButtonProps.Props> = args => <Button {...args} />;
+const Template: Story<TextInputProps.Props> = args => <TextInput {...args} />;
 export const Default = Template.bind({});
 
 Default.args = {
-  children: 'Example button',
-  variant: 'primary',
+    placeholder: 'Example input',
+    variant: 'primary',
 };
