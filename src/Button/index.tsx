@@ -17,7 +17,7 @@ export class Button extends React.Component<Props> {
         return (
             <StyledButton t={themeContext} p={this.props} {...this.props}>
                 {(this.props.icon && (
-                    <span className="snap-kit--button-icon">
+                    <span data-with-children={`${this.props.children != undefined}`} className="snap-kit--button-icon">
                         {this.props.icon}
                     </span>
                 ))}

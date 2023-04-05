@@ -24,10 +24,20 @@ export const StyledButton = styled.button`
             font-size: 14px;
             line-height: 1.25rem;
 
+            &:has(span.snap-kit--button-icon:first-child[data-with-children="true"]) {
+                padding: 5px 10px 5px 10px;
+            }
+
             & span.snap-kit--button-icon:first-child {
-                width: 1em;
-                height: 1em;
+                width: 1.1em;
+                height: 1.1em;
                 fill: currentcolor;
+                padding-right: 5px;
+            }
+
+            & span.snap-kit--button-icon:first-child[data-with-children="false"],
+            &:has(span.snap-kit--button-icon:first-child[data-with-children="false"]) {
+                padding: 5px;
             }
             `
         : props.p.size === 'medium' ? 
@@ -42,6 +52,18 @@ export const StyledButton = styled.button`
 
                 margin-right: 10px;
             }
+
+            &:has(span.snap-kit--button-icon:first-child[data-with-children="true"]) {
+                padding: 10px 20px 10px 15px;
+            }
+
+            & span.snap-kit--button-icon:first-child[data-with-children="false"] {
+                margin-right: 0;
+            }
+
+            &:has(span.snap-kit--button-icon:first-child[data-with-children="false"]) {
+                padding: 10px;
+            }
             `
         : /* large */ `
             padding: 15px 30px;
@@ -52,6 +74,18 @@ export const StyledButton = styled.button`
                 height: 25px;
 
                 margin-right: 15px;
+            }
+
+            & span.snap-kit--button-icon:first-child[data-with-children="false"] {
+                margin-right: 0;
+            }
+
+            &:has(span.snap-kit--button-icon:first-child[data-with-children="true"]) {
+                padding: 15px 25px 15px 20px;
+            }
+
+            &:has(span.snap-kit--button-icon:first-child[data-with-children="false"]) {
+                padding: 15px;
             }
         `}
     `}

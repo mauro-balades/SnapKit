@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Props } from "./props";
 import StyleProps from "../_style-props";
 
-export const StyledTextInput = styled.input`
+export const StyledInput = styled.input`
     font-size: 15px;
     outline: none;
 

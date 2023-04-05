@@ -1,11 +1,11 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { TextInput, TextInputProps } from '../src';
+import { Input, InputProps } from '../src';
 import { withReactContext } from 'storybook-react-context';
 
 const meta: Meta = {
   title: 'Inputs/Text input',
-  component: TextInput,
+  component: Input,
   argTypes: {
     children: {
       control: {
@@ -20,7 +20,7 @@ const meta: Meta = {
 
 export default meta;
 
-const Template: Story<TextInputProps.Props> = args => <TextInput {...args} />;
+const Template: Story<InputProps.Props> = args => <Input {...args} />;
 export const Default = Template.bind({});
 
 Default.args = {

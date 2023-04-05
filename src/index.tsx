@@ -3,5 +3,5 @@ export * from "./theme";
 export * from "./context";
 export * from "./Button";
 export * from "./GlassElement";
-export * from "./TextInput";
+export * from "./Input";
 export * from "./defined-themes";
